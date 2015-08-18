@@ -10,7 +10,7 @@ $(function(){
     	for(var i=0;i<str.length;i++){
     		(function(a){
     			setTimeout(function(){
-    				if(str[a]=="\n") $("div.bless").append("<span></span><div></div>");
+    				if(str[a]=="\n") $("div.bless").append("<span></span><br/>");
     				else  $("div.bless").append("<span>"+str[a]+"</span>");
     				$("div.bless span").eq(a).animate({"opacity":"1"},1000);
     				if(a==str.length-1)
