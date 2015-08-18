@@ -109,8 +109,8 @@ div.container{
     -webkit-animation:leani 12s ease-in;
 }
 a.sing{
-    width:200px;
-    height:170px;
+    width:140px;
+    height:140px;
     cursor:pointer;
     position: absolute;
     z-index: 100;
