@@ -1,7 +1,7 @@
 $(function(){
 	var times=0;
 	var str=new Array();
-	var word="To 寿 星: \n 　　当 我 把 神 灯 擦 三 下 后, 灯 神 问 我 想 许 什 么 愿? 我 说: 我 想 你 帮 我 保 佑 一 个 正 在 看 这 张 贺 卡 的 人, 希 望 那 人 生 日 快 乐, 永 远 幸 福!  　　　　　　From Xiaoqinzhe";
+	var word="To 寿 星: \n 当 我 把 神 灯 擦 三 下 后, 灯 神 问 我 想 许 什 么 愿? 我 说: 我 想 你 帮 我 保 佑 一 个 正 在 看 这 张 贺 卡 的 人, 希 望 那 人 生 日 快 乐, 永 远 幸 福!  　　　　　　From Xiaoqinzhe";
     str=word.split(" ");
     setTimeout(show,12000);
     function show(){
@@ -16,7 +16,6 @@ $(function(){
     				if(a==str.length-1)
     					setTimeout(function(){
 	    					$("a.sing").show().animate({"opacity":"1"},1000);
-	    					alert($("div.bless").width());
 	    				},1000);
     		    },300*a);
     		})(i);
