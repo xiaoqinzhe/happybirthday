@@ -16,6 +16,7 @@ $(function(){
     				if(a==str.length-1)
     					setTimeout(function(){
 	    					$("a.sing").show().animate({"opacity":"1"},1000);
+	    					alert($("div.bless").width());
 	    				},1000);
     		    },300*a);
     		})(i);

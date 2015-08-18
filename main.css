@@ -155,4 +155,7 @@ div.bless span{
     div.bless span{
         font: 1.5em webfont;
     }
+    div.bless{
+        top:50%;
+    }
 }
