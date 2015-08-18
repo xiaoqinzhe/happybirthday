@@ -76,6 +76,8 @@ div.container{
 .words{
     width:50%;
     height:100%;
+    word-wrap:break-word;
+　　word-break:normal;
     position: absolute;
 }
 .words p{
