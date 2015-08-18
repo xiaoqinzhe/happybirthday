@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+}
+@font-face{
+    font-family: webfont;
+    src:url(font/AlexBrush-Regular.ttf);
+}
+@-webkit-keyframes bgmove{
+    0%{background-position: 0 0;background-size:100% 220%;}
+    67%{background-position: 0 0;background-size:100% 220%;}
+    84%{background-position: 0 100%;background-size:100% 220%;}
+    100%{background-position: 36% 88%;background-size: 149% 218%;}
+}
+@-webkit-keyframes imgani{
+    0%{top:-10%;opacity: 1;-webkit-transform:rotate(0deg);}
+    8%{top:11px;opacity: 1;-webkit-transform:rotate(0deg);}
+    67%{opacity: 1;-webkit-transform:rotate(0deg);}
+    100%{opacity: 0;-webkit-transform:rotate(400deg) scale(0,0);}
+}
+@-webkit-keyframes zhuani{
+    0%{opacity: 1;left:-50%;-webkit-transform:skew(-90deg,0deg);}
+    9%{opacity: 1;left:-50%;-webkit-transform:skew(-90deg,0deg);}
+    21%{opacity: 1;left:10%;-webkit-transform:skew(0deg,0deg);}
+    25%{opacity: 1;left:5%;-webkit-transform:skew(18deg,0deg);}
+    75%{opacity: 1;left:5%;-webkit-transform:skew(18deg,0deg);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes shengani{
+    0%{opacity: 1;left:-40%;-webkit-transform:rotateX(-180deg);}
+    25%{opacity: 1;left:-40%;-webkit-transform:rotateX(-180deg);}
+    33%{opacity: 1;left:5%;-webkit-transform:rotateX(360deg);}
+    75%{opacity: 1;left:5%;-webkit-transform:rotateX(360deg);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes riani{
+    0%{opacity: 1;left:-40%;-webkit-transform:rotate(0deg);}
+    32%{opacity: 1;left:-40%;-webkit-transform:rotate(0deg);}
+    41%{opacity: 1;left:4%;-webkit-transform:rotate(360deg);}
+    75%{opacity: 1;left:4%;-webkit-transform:rotate(360deg);}
+    100%{opacity: 0;}
+}
+ @-webkit-keyframes kuaiani{
+    0%{opacity: 1;left:-40%;-webkit-transform:rotateY(0deg);}
+    42%{opacity: 1;left:-40%;-webkit-transform:rotateY(0deg);}
+    50%{opacity: 1;left:5%;-webkit-transform:rotateY(360deg);}
+    75%{opacity: 1;left:5%;-webkit-transform:rotateY(360deg);}
+    100%{opacity: 0;}
+} 
+@-webkit-keyframes leani{
+   0%{opacity:0;left:40%;-webkit-transform:scale(4,4);}
+   50%{opacity:1;left:20%;-webkit-transform:scale(4,4);}
+   58%{opacity:1;left:4%;-webkit-transform:scale(1,1);}
+   75%{opacity: 1;left:4%;-webkit-transform:scale(1,1);}
+    100%{opacity: 0;}
+} 
+div.container{
+    height:100%;
+    width:100%;
+    background: url("img/1.jpg") no-repeat;
+    background-size:149% 218%;
+    background-position: 36% 88%;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: bgmove 12s ease-out;
+}
+.container img.img1{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    opacity:0;
+    -webkit-animation: imgani 12s ease;
+}
+.words{
+    width:50%;
+    height:100%;
+    position: absolute;
+}
+.words p{
+    font: 3em webfont;
+    color:#fff;
+    text-shadow: 2px 2px 20px #fff;
+    opacity: 0;
+    margin-top: 9px;
+    position: relative;
+}
+.words p.zhu{
+    font: 3em webfont;
+    left:5%;
+    -webkit-transform:skew(18deg,0deg);
+    -webkit-animation:zhuani 12s ease;
+}
+.words p.sheng{
+    left:5%;
+    -webkit-animation:shengani 12s ease-in;
+}
+.words p.ri{
+    left:4%;
+    -webkit-animation:riani 12s ease-in;
+}
+.words p.kuai{
+    left:5%;
+    -webkit-animation:kuaiani 12s ease-in;
+}
+.words p.le{
+    left:4%;
+    -webkit-animation:leani 12s ease-in;
+}
+a.sing{
+    width:200px;
+    height:170px;
+    cursor:pointer;
+    position: absolute;
+    z-index: 100;
+    top:4%;
+    left:4%;
+    opacity: 0;
+    display: none;
+}
+a.sing img{
+    width:100%;
+    height:100%;
+}
+div.bless{
+    width:61%;
+    -webkit-transform:rotate(-14deg);
+    position: absolute;
+    top:55%;
+    right:8%;  
+    opacity: 1; 
+}
+div.bless span{
+    opacity:0;
+}
+.a{
+    display: none;
+}
+@media (max-width: 500px){
+    a.sing{
+        width:128px;
+        height:128px;
+    }
+    div.bless span{
+        font: 1em webfont;
+    }
+    .container img.img1{
+        height: 20%;
+        width: 56%;
+    }
+}
+@media (min-width: 500px){
+    div.bless span{
+        font: 1.5em webfont;
+    }
+}
